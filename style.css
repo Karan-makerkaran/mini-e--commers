@@ -1,128 +1,119 @@
-/* General Reset */
-* {
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body Styles */
-  body {
-    font-family: 'Arial', sans-serif;
-    color: #ffffff;
-    background-color: #1a1a1a;
     line-height: 1.6;
+    background-color: #f4f4f4;
   }
   
-  /* Hero Section */
-  .hero-section {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0 2rem;
-    background: linear-gradient(135deg, #0d1117, #1f2937);
+  /* Header */
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
   }
-  
-  /* Navigation Bar */
-  .navbar {
+  header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0;
   }
-  
-  .logo a {
+  header .logo {
     font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffffff;
-    text-decoration: none;
   }
-  
-  .nav-links {
+  header .logo span {
+    color: #f39c12;
+  }
+  header nav ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
   }
-  
-  .nav-links a {
-    color: #d1d5db;
+  header nav ul li {
+    margin-left: 20px;
+  }
+  header nav ul li a {
+    color: #fff;
     text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s;
+  }
+  header .btn {
+    background: #f39c12;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
   }
   
-  .nav-links a:hover {
-    color: #10b981;
+  /* Hero Section */
+  .hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #000000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+  .hero .btn {
+    background: #f39c12;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
   }
   
-  .cta-btn {
-    padding: 0.7rem 1.5rem;
-    background: #10b981;
-    color: #ffffff;
-    font-size: 1rem;
+  /* About Section */
+  #about {
+    background: #fff;
+    padding: 2rem;
+  }
+  #about h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  #about ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  /* Portfolio Section */
+  #portfolio {
+    background: #f4f4f4;
+    padding: 2rem;
+  }
+  #portfolio .portfolio-item {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  #portfolio img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background: #333;
+    color: #fff;
+    padding: 2rem;
+  }
+  #contact form input, #contact form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+  }
+  #contact form .btn {
+    background: #f39c12;
+    color: #fff;
+    padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
-    text-decoration: none;
-    transition: background 0.3s;
   }
   
-  .cta-btn:hover {
-    background: #059669;
-  }
-  
-  /* Hero Content */
-  .hero-content {
-    text-align: center;
-    margin-top: 5rem;
-  }
-  
-  .hero-content h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #ffffff;
-  }
-  
-  .hero-content p {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    color: #9ca3af;
-  }
-  
-  .hero-buttons {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .btn-primary, .btn-secondary {
-    padding: 0.8rem 2rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .btn-primary {
-    background: #10b981;
-    color: #ffffff;
-    transition: background 0.3s;
-  }
-  
-  .btn-primary:hover {
-    background: #059669;
-  }
-  
-  .btn-secondary {
-    background: transparent;
-    border: 2px solid #10b981;
-    color: #10b981;
-    transition: all 0.3s;
-  }
-  
-  .btn-secondary:hover {
-    background: #10b981;
-    color: #ffffff;
-  }
+
   
