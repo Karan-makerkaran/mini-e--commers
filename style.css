@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #1a1a1a;
+    line-height: 1.6;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background: linear-gradient(135deg, #0d1117, #1f2937);
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #10b981;
+  }
+  
+  .cta-btn {
+    padding: 0.7rem 1.5rem;
+    background: #10b981;
+    color: #ffffff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .cta-btn:hover {
+    background: #059669;
+  }
+  
+  /* Hero Content */
+  .hero-content {
+    text-align: center;
+    margin-top: 5rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #9ca3af;
+  }
+  
+  .hero-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    background: #10b981;
+    color: #ffffff;
+    transition: background 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background: #059669;
+  }
+  
+  .btn-secondary {
+    background: transparent;
+    border: 2px solid #10b981;
+    color: #10b981;
+    transition: all 0.3s;
+  }
+  
+  .btn-secondary:hover {
+    background: #10b981;
+    color: #ffffff;
+  }
+  
